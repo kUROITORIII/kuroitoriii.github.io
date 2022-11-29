@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	overflow-x: hidden;
+	background-color: #1b1b1b;
+}
+
+header {
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+}
+
+header .top {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+header .top div {
+	list-style: none;
+	margin-left: 20px;
+}
+
+header .top div a {
+	line-height: 2;
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #fff;
+	border-radius: 20px;
+}
+
+header .top div a:hover,
+header .top div a.active {
+	background: #fff;
+	color: #2b1055;
+}
+
+.second {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	height: 9.375rem;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.menu {
+	position: fixed;
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 10%;
+	column-gap: 0.9rem;
+	row-gap: 0.9rem;
+	right: 0rem;
+	bottom: 30%;
+}
+
+.menu div {
+	background: rgba(225, 225, 225, 0.8);
+	color: #2b1055;
+	text-align: center;
+	border-radius: 0.625rem;
+}
+
+.menu div a {
+	text-decoration: none;
+	color: #2b1055;
+}
+
+.menu div:hover {
+	background: #000;
+}
+
+.menu div a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.second div a {
+	text-decoration: none;
+	padding: 6px 15px;
+	background: #fff;
+	color: #2b1055;
+	border-radius: 20px;
+}
+
+.second div a:hover {
+	background: #000;
+	color: #fff;
+}
+
+.main {
+	margin: auto auto;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-items: center;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+.air {
+	width: 100%;
+	height: 9.375rem;
+}
+
+.feed {
+	width: 100%;
+	height: 1.875rem;
+}
+
+.word {
+	margin: auto auto;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-items: center;
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+video {
+	display: block;
+	margin: 0% auto;
+}
+
+
+
+.mod {
+	display: grid;
+	grid-template-columns: 40% 40%;
+	column-gap: 0.3125rem;
+	row-gap: 0.3125rem;
+	justify-content: center;
+}

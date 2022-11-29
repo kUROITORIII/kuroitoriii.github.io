@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+
+
+	<body>
+		<header>
+			<ul>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="paint.html">絵画</a></li>
+				<li><a href="photo.html">撮影</a></li>
+				<li><a href="digital.html">デジタル技術</a></li>
+			</ul>
+		</header>
+
+		<section>
+			<img src="img/stars.png" id="stars">
+			<img src="img/moon.png" id="moon">
+			<img src="img/mountains_behind.png" id="mountains_behind">
+			<h2 id="text">ポートフォリオ</h2>
+			<a href="#sec" id="btn">詳しい</a>
+			<img src="img/mountains_front.png" id="mountains_front">
+		</section>
+
+
+		<div class="sec" id="sec">
+			<h2>ポートフォリオ</h2>
+			<div class="container">
+				<div class="card">
+					<div class="content">
+						<h2>01</h2>
+						<h3>絵画</h3>
+						<p>デッサンとイラスト</p>
+						<a href="paint.html">もっと見る</a>
+					</div>
+
+				</div>
+				<div class="card">
+					<div class="content">
+						<h2>02</h2>
+						<h3>撮影</h3>
+						<p>一眼レフなどで撮影してちょっと調色を行う</p>
+						<a href="photo.html">もっと見る</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="content">
+						<h2>03</h2>
+						<h3>デジタル技術</h3>
+						<p>Blenderやprなどソフトウェアでビデオなどことを作る</p>
+						<a href="digital.html">もっと見る</a>
+					</div>
+				</div>
+
+			</div>
+
+			<script>
+				let stars = document.getElementById('stars')
+				let moon = document.getElementById('moon')
+				let mountains_behind = document.getElementById('mountains_behind')
+				let text = document.getElementById('text')
+				let btn = document.getElementById('btn')
+				let mountains_front = document.getElementById('mountains_front')
+				let header = document.querySelector('header')
+
+				window.addEventListener('scroll', function() {
+					let value = window.scrollY;
+					stars.style.left = value * 0.25 + 'px'
+					moon.style.top = value * 1.05 + 'px'
+					mountains_behind.style.top = value * 0.5 + 'px'
+					mountains_front.style.top = value * 0 + 'px'
+					text.style.marginRight = value * 4 + 'px'
+					text.style.marginTop = value * 1.5 + 'px'
+					btn.style.marginTop = value * 1.5 + 'px'
+					header.style.top = value * 0.5 + 'px'
+				})
+			</script>
+	</body>
+</html>
